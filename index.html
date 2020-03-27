@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Visitor Manager</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<tbody>
+	<p>Visitor Manager</p>
+	<input type="text" id="txtVisitor" placeholder="Type name to add visitor">
+	<button type="button" id="btnAdd">Add</button>
+	<table>
+		<tr>
+			<th class="thHeader">Currently Waiting - <span id="spanCurrentWaiting"></span></th>
+			<th class="thHeader">Under Progress</th>
+			<th class="thHeader">Recent Log - <span id="spanRecentLog"></span></th>
+		</tr>
+		<tr>
+			<td id="tdWaiting"></td>
+			<td id="tdProgress">
+				<table>
+					<tr class="clsHandlingA">
+						<td>
+							A handling - <span id="spanA">N/A</span>
+							<button class='clsAccept' type='button' id='btnAcceptA' data-for='spanA'>Accept</button>
+						</td>
+					</tr>
+					<tr class="clsHandlingB">
+						<td>
+							B handling - <span id="spanB">N/A</span>
+							<button class='clsAccept' type='button' id='btnAcceptB' data-for='spanB'>Accept</button>
+						</td>
+					</tr>
+					<tr class="clsHandlingC">
+						<td>
+							C handling - <span id="spanC">N/A</span>
+							<button class='clsAccept' type='button' id='btnAcceptC' data-for='spanC'>Accept</button>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td id="tdRecent"> <span class="slider"></span></td>
+		</tr>
+	</table>
+</tbody>
+
+</html>
